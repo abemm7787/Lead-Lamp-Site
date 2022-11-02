@@ -1,0 +1,12 @@
+.b{
+    height:100vh;
+background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background-color: white;
+}
