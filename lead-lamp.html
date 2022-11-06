@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="lead-lamp.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-</head>
-<body class="b">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="lead-lamp.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
- 
-    
-    <img  class="z-index-1  position-absolute" src="SEP6" alt="lava1">
-    <img  class="z-index-2  position-absolute" src="SEP14.png" alt="lava1">
-    <img  class="z-index-3  position-absolute" src="Neon-Element_0002_23.png" alt="lava1">
-        <img class='z-index-4 position-absolute' src="Neon-Element_0013_12.png" alt="lava2">
-        <img  class="z-index-5  position-absolute" src="llm.png" alt="lav3">
+   
+        <script>
+            let lavFunction = () => {
+                let mix = document.getElementsByClassName("preLava")
+                let newe =  mix[0].className = "firstLava"
+                var element = document.getElementById("myDIV");
+                element.classList.remove("preLava");
+
+                console.log(element)
+     
+        
+               
       
- 
-    
-    
-    
-</body>
+            }
+
+            
+            console.log(element)
+     
+
+        </script>
+    </head>
+    <body class="b">
+        <img id="myDIV"
+        onclick="lavFunction()" class="preLava" src="SEP6.png" alt="lava1">
+
+    <!-- <img class="z-index-2  secoundLava position-absolute" src="Neon-Element_0020_5.png" alt="lava1">
+            <img class="z-index-3  thirdLava position-absolute" src="Neon-Element_0002_23.png" alt="lava1">
+            <img class='z-index-4 fourthLava position-absolute' src="Neon-Element_0013_12.png" alt="lava2"> -->
+
+
+    </body>
+
+    <img class="z-index-5  position-absolute" src="llm.png" alt="lav3">
+
+
 </html>
