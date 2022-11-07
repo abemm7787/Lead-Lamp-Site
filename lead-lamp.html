@@ -10,39 +10,41 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-   
         <script>
             let lavFunction = () => {
-                let mix = document.getElementsByClassName("preLava")
-                let newe =  mix[0].className = "firstLava"
-                var element = document.getElementById("myDIV");
-                element.classList.remove("preLava");
 
-                console.log(element)
-     
-        
-               
-      
+                setTimeout(function () {
+
+                    lavFunctionx()
+                }, 10000)
+
+                let  lavFunctionx = () => {
+                    let mix = document.getElementsByClassName("preLava")
+                    let newe = mix[0].className = "firstLava"
+                    var element = document.getElementById("myDIV");
+                    element.classList.remove("preLava");
+                    console.log(element)
+
+                }
+
+                let mix2 = document.getElementsByClassName("yellowLava")
+                console.log(mix2)
+                let newe2 = mix2[0].className = "secoundLava"
+                var element2 = document.getElementById("myDIV2");
+                element2.classList.remove("yellowLava");
+                console.log(element2)
             }
-
-            
-            console.log(element)
-     
-
         </script>
     </head>
-    <body class="b">
-        <img id="myDIV"
-        onclick="lavFunction()" class="preLava" src="SEP6.png" alt="lava1">
+    <body class="b ">
 
-    <!-- <img class="z-index-2  secoundLava position-absolute" src="Neon-Element_0020_5.png" alt="lava1">
-            <img class="z-index-3  thirdLava position-absolute" src="Neon-Element_0002_23.png" alt="lava1">
-            <img class='z-index-4 fourthLava position-absolute' src="Neon-Element_0013_12.png" alt="lava2"> -->
+        <img id="myDIV2" onclick="lavFunction()" class="  yellowLava  position-fixed" src="Neon-Element_0020_5.png" alt="lava1">
+        <img id="myDIV" onclick=" lavFunction()" class="   z-index-9 position-fixed preLava " src="SEP6.png" alt="lava1">
 
+        <!-- <img class="z-index-3  thirdLava position-absolute" src="Neon-Element_0002_23.png" alt="lava1"> -->
+        <!-- <img class='z-index-4 fourthLava position-absolute' src="Neon-Element_0013_12.png" alt="lava2"> -->
+    -->
+            -->
 
     </body>
-
-    <img class="z-index-5  position-absolute" src="llm.png" alt="lav3">
-
-
-</html>
+<img class="z-index-5  position-absolute" src="llm.png" alt="lav3"> </html>

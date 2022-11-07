@@ -7,6 +7,16 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    position: relative;
+}
+
+
+
+#myDIV2{
+
+
+
 }
 
 
@@ -18,12 +28,12 @@
 
 .firstLava {
 
-    z-index:-1; 
+  
     animation: firstLava;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-      
-   
+    /* z-index: -4
+    */
 
 }
 /* Bottom- Left Lava*/
@@ -32,10 +42,12 @@
 
     from {
         transform: translate(-0px, -0%);
-        
+
+        z-index: -9
     }
     to {
         transform: translate(-1900px, -40%);
+        z-index: -9
 
     }
 }
@@ -44,14 +56,21 @@
 .secoundLava {
 animation: secoundLava;
 animation-duration: 4s;
+animation-fill-mode: forwards;
+
 
 }
 
 @keyframes secoundLava{
     from{    
-         transform: translate(0px, 0%); }
+         transform: translate(0px, 0%);
+    
+        }
+
     to{   
-         transform: translate(-2000px, 40%); }
+         transform: translate(-2000px, 40%);
+     
+        }
 }
 
 
