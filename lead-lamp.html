@@ -9,17 +9,21 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<style>
-.b {
+        <style>
 
 
-height: 100vh;
-background-color: brown;
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
+
+.nav{
 position: relative;
+display: flex;
+margin-bottom: 42vh;
+
+}
+
+.nav-item{
+
+ padding: 40px;
+
 
 }
 
@@ -27,139 +31,193 @@ position: relative;
 
 
 
-.firstLava {
+            .lead-lamp {
+                border-style: solid;
+                padding: 120px;
+                color: white;
 
-
-animation: firstLava;
-animation-duration: 4s;
-animation-fill-mode: forwards;
-
-
-
-}
-/* Bottom- Left Lava*/
-
-@keyframes firstLava {
-
-from {
-    transform: translate(-0px, -0%);
- animation-delay: 10s;
-  
-}
-to {
-    transform: translate(-1900px, -40%);
-   
-}
-}
-
-
-.secoundLava {
-animation: secoundLava;
-animation-duration: 4s;
-animation-fill-mode: forwards;
-
-
-}
-
-@keyframes secoundLava {
-from {
-    transform: translate(0px, 0%);
-    animation-delay: 10s;
-
-}
-
-to {
-    transform: translate(-2000px, 40%);
-
-}
-}
-
-
-/* Right Bottom lava */
-.thirdLava {
-animation: thirdLava;
-animation-duration: 4s;
-animation-fill-mode: forwards;
-
-}
-
-
-@keyframes thirdLava {
-
-from {
-    transform: translate(0vh, -0%);
-    animation-delay: 10s;
-}
-to {
-    transform: translate(2000px, 50%);
-}
-}
-
-
-/* Right Top Lava */
-.fourthLava {
-animation: leadingLava;
-animation-duration: 4s;
-animation-fill-mode: forwards;
-
-}
-
-@keyframes leadingLava {
-
-from {
-    transform: translate(0vh, -0%);
-    animation-delay: 10s;
-}
-to {
-    transform: translate(83vh, -50%);
-}
-}
-
-
-.animated{
-                animation-play-state:paused;
-            }
-            .activated{
-                animation-play-state:running
             }
 
-</style>
+
+            .bottom-text {
+
+                margin-top: 35vh;
+                color: beige;
+                font-size: 2vh;
+
+
+            }
+
+            .b {
+
+
+                height: 100vh;
+                background-color: brown;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                position: relative;
+
+            }
+
+
+            .firstLava {
+
+
+                animation: firstLava;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+
+
+            }
+            /* Bottom- Left Lava*/
+
+            @keyframes firstLava {
+
+                from {
+                    transform: translate(-0px, -0%);
+                    animation-delay: 10s;
+
+                }
+                to {
+                    transform: translate(-1900px, -40%);
+
+                }
+            }
+
+
+            .secoundLava {
+                animation: secoundLava;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+
+
+            }
+
+            @keyframes secoundLava {
+                from {
+                    transform: translate(0px, 0%);
+                    animation-delay: 10s;
+
+                }
+
+                to {
+                    transform: translate(-2000px, 40%);
+
+                }
+            }
+
+
+            /* Right Bottom lava */
+            .thirdLava {
+                animation: thirdLava;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+
+            }
+
+
+            @keyframes thirdLava {
+
+                from {
+                    transform: translate(0vh, -0%);
+                    animation-delay: 10s;
+                }
+                to {
+                    transform: translate(2000px, 50%);
+                }
+            }
+
+
+            /* Right Top Lava */
+            .fourthLava {
+                animation: leadingLava;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+
+            }
+
+            @keyframes leadingLava {
+
+                from {
+                    transform: translate(0vh, -0%);
+                    animation-delay: 10s;
+                }
+                to {
+                    transform: translate(83vh, -50%);
+                }
+            }
+
+
+            .animated {
+                animation-play-state: paused;
+            }
+            .activated {
+                animation-play-state: running
+            }
+
+
+            .loader {
+                position: absolute;
+            }
+
+            .particle {}
+        </style>
 
 
         <script>
 
 
-let = toggle =()=>{
-    
-                document.addEventListener('click',()=>{
-                    Array.from( document.querySelectorAll( '.animated' ) ).forEach( div=>{
+            let = toggle = () => {
+
+                document.addEventListener('click', () => {
+                    Array.from(document.querySelectorAll('.animated')).forEach(div => {
                         div.classList.toggle('activated')
                     })
                 });
-         
-}
 
-
+            }
         </script>
 
 
-
-
-
     </head>
+
+    <nav  class="nav">  
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" src=""></a>
+        <h1>  Hello</h1> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" src=""></a>
+        <h1>   Hello </h1>  
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" src=""></a>
+         <h1>Hello </h1> 
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" src=""></a>
+         <h1> Hello </h1> 
+        </li>
+      </ul>
+    </nav>
+
     <body class="b">
-   
-        <img  onclick="toggle()" class=" position-fixed  firstLava  animated " src="SEP6.png" alt="lava1">
 
-        <img  onclick="toggle()" class=" z-index-9 position-absolute  secoundLava animated" src="Neon-Element_0020_5.png" alt="lava1">
-
-
-         <img   onclick="toggle()"  class=" z-index-3  position-absolute thirdLava  animated" src="Neon-Element_0002_23.png" alt="lava1">
-        <img  onclick="toggle()"  class='z-index-4   preFourthLava position-absolute  fourthLava animated' src="Neon-Element_0013_12.png" alt="lava2"> 
-
-
+        <img onclick="toggle()" class=" position-fixed  firstLava  animated " src="SEP6.png" alt="lava1">
+        <img onclick="toggle()" class=" z-index-9 position-absolute  secoundLava animated" src="Neon-Element_0020_5.png" alt="lava1">
+        <img onclick="toggle()" class=" z-index-3  position-absolute thirdLava  animated" src="Neon-Element_0002_23.png" alt="lava1">
+        <img onclick="toggle()" class='z-index-4   preFourthLava position-absolute  fourthLava animated' src="Neon-Element_0013_12.png" alt="lava2">
     </body>
-    <img class="z-index-5   position-absolute  " src="llm.png" alt="lav3">
-    
-    
+
+
+    <img class="z-index-5   position-absolute  lead-lamp" src="llm.png" alt="lav3">
+    <h2 class=" position-absolute  bottom-text">
+        -- Discover How We Can Light Your Lead Lamp --
+    </h2>
+
+
 </html>
