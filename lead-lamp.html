@@ -31,7 +31,7 @@ display: flex;
 .nav-item{
 
  padding: 40px;
- z-index:12
+ z-index:12;
 
 
 }
@@ -61,7 +61,7 @@ display: flex;
 
 
                 height: 100vh;
-                background-color: brown;
+                background-color: rgb(13, 0, 0);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -143,10 +143,12 @@ display: flex;
                     transform: translate(0vh, -0%);
                     transform: scale(0.0);
                     animation-delay: 10s;
+                    transform: rotate(0deg);
                 }
                 to {
                     transform: translate(2000px, 50%);
                     transform: scale(3.0);
+                    transform: rotate(180deg);
 
                 }
             }
@@ -212,13 +214,18 @@ document.addEventListener('click', () => {
     <nav  class="nav">  
     <ul class="nav">
         <li class="nav-item">
-          <img class="nav-link active" src="./facebook.png"></img>
+          <img class="nav-link active" src="./fb.png"></img>
     
         </li>
         <li class="nav-item">
-          <img class="nav-link" src="./instagram.png"></img>
+          <img class="nav-link" src="./insta.png"></img>
     
         </li>
+        <li class="nav-item">
+            <img class="nav-link" src="./tiktok.png"></img>
+         
+  
+          </li>
         <li class="nav-item">
           <img class="nav-link" src="./glowbulb3.png"></img>
        
@@ -233,9 +240,9 @@ document.addEventListener('click', () => {
 
     <body class="b">
 
-        <img onclick="toggle()" class=" z-index-4   position-fixed  firstLava  animated " src="SEP6.png" alt="lava1">
-        <img onclick="toggle()" class=" z-index-3 position-absolute  secoundLava animated" src="Neon-Element_0020_5.png" alt="lava1">
-        <img onclick="toggle()" class=" z-index-2  position-absolute thirdLava  animated" src="Neon-Element_0002_23.png" alt="lava1">
+        <img onclick="toggle()" class=" z-index-4   position-fixed  firstLava  animated " src="SEP14 (1).png" alt="lava1">
+        <img onclick="toggle()" class=" z-index-3 position-absolute  secoundLava animated" src="Neon-Element_0016_9.png" alt="lava1">
+        <img onclick="toggle()" class=" z-index-2  position-absolute thirdLava  animated" src="SEP6.png" alt="lava1">
         <img onclick="toggle()" class='z-index-1   preFourthLava position-absolute  fourthLava animated' src="Neon-Element_0013_12.png" alt="lava2">
     </body>
 
