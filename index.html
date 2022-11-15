@@ -77,32 +77,46 @@ display: flex;
                 animation: firstLava;
                 animation-duration: 10s;
                 animation-fill-mode: forwards;
+                
                 transform-origin: 100% 90%;
+              
                 
 
 
             }
             /* Bottom- Left Lava*/
-
             @keyframes firstLava {
 
-                from {
-                    transform: translate(-0px, -0%);
-                    transform: scale(0.0);
-                    animation-delay: 10s;
+from {
+    transform: translate(0vh, -0%);
+    animation-delay: 0s;
+    
+}
+to {
+    transform:  translate(83vh, -50%);
+    transform: scale(3.0);
+    
+}
+}
 
-                }
-                to {
-                    transform: translate(-1900px, -40%);
-                    transform: scale(3.0);
 
-                }
-            }
+.animated {
+animation-play-state: paused;
+}
+.activated {
+animation-play-state: running
+}
+
+
+.loader {
+position: absolute;
+}
+
 
 
             .secoundLava {
                 animation: secoundLava;
-                animation-duration: 10s;
+                animation-duration: 4s;
                 animation-fill-mode: forwards;
                 transform-origin: 100% 10%;
 
@@ -113,11 +127,43 @@ display: flex;
                 from {
                     transform: translate(0px, 0%);
                     transform: scale(0.0);
-                    animation-delay: 10s;
+                    animation-delay: 0s;
        
 
                 }
 
+                to {
+                    transform: translate(-2000px, 40%);
+                    transform: scale(3.0);
+
+                }
+            }
+
+
+
+
+
+
+
+
+            .secoundLava {
+                animation: thirdLava;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+                transform-origin: 100% 10%;
+                
+
+            }
+
+
+            @keyframes thirdLava {
+
+                from {
+                    transform: translate(0vh, -0%);
+                    transform: scale(0.0);
+                    animation-delay: 0s;
+                   
+                }
                 to {
                     transform: translate(-2000px, 40%);
                     transform: scale(3.0);
@@ -142,7 +188,7 @@ display: flex;
                 from {
                     transform: translate(0vh, -0%);
                     transform: scale(0.0);
-                    animation-delay: 10s;
+                    animation-delay: 0s;
                     transform: rotate(0deg);
                 }
                 to {
@@ -168,7 +214,7 @@ display: flex;
 
                 from {
                     transform: translate(0vh, -0%);
-                    animation-delay: 10s;
+                    animation-delay: 0s;
                     
                 }
                 to {
@@ -255,9 +301,12 @@ document.addEventListener('click', () => {
                 <img onclick="toggle()" class=" z-index-5   position-fixed  firstLava  animated " src="Neon-Element_0022_3.png" alt="lava1">
                 <img onclick="toggle()" class=" z-index-5   position-fixed  firstLava  animated " src="Neon-Element_0018_7.png" alt="lava1"> --> 
            
-                <img onclick="toggle()" class=" z-index-4   position-fixed  firstLava  animated " src="./images/SEP14 (1).png" alt="lava1">
-        <img onclick="toggle()" class=" z-index-3 position-absolute  secoundLava animated" src="./images/Neon-Element_0016_9.png" alt="lava1">
-        <img onclick="toggle()" class=" z-index-2  position-absolute thirdLava  animated" src="./images/SEP6.png" alt="lava1">
+                <!-- <img onclick="toggle()" class=" z-index-4   position-fixed  firstLava  animated " src="./images/SEP14 (1).png" alt="lava1"> -->
+         <!-- <img onclick="toggle()" class=" z-index-3 position-absolute  secoundLava animated" src="./images/Neon-Element_0016_9.png" alt="lava1"> -->
+         <img onclick="toggle()" class=" z-index-2  position-absolute firstLava  animated" src="./images/SEP14 (1).png" alt="lava1"> 
+         <img onclick="toggle()" class=" z-index-2  position-absolute thirdLava  animated" src="./images/Neon-Element_0016_9.png" alt="lava1"> 
+
+        <img onclick="toggle()" class=" z-index-2  position-absolute secoundLava  animated" src="./images/SEP6.png" alt="lava1"> 
         <img onclick="toggle()" class='z-index-1   preFourthLava position-absolute  fourthLava animated' src="./images/Neon-Element_0013_12.png" alt="lava2">
     </body>
 
